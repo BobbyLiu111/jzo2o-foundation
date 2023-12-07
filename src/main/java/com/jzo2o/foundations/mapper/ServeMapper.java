@@ -20,4 +20,11 @@ import java.util.List;
  * @since 2023-07-03
  */
 public interface ServeMapper extends BaseMapper<Serve> {
+
+    /**
+     * 区域服务查询
+     * @param regionId 区域id
+     * @return
+     */
+    List<ServeResDTO> queryServeListByRegionId(@Param("regionId") Long regionId);
 }
